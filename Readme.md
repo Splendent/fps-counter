@@ -33,6 +33,18 @@ You can remove the label any time later:
 FPSCounter.hide()
 ```
 
+For SwiftUI, which status bar might not working, you can use `FPSCounterView`:
+
+```swift
+var body: some View {
+    ...    
+    FPSCounterView()
+    ...
+}
+```
+
+`FPSCounterView` will startTracking when appear, stop it when disappear.
+
 If you'd like more control on how to display the frames, you can create a private
 `FPSCounter` instance and set a delegate
 
